@@ -51,11 +51,6 @@
 				'Very doubtful.'
         ];
 
-        //Get the fortune and render it to the DOM
-        function GetFortune(){
-            fortune.textContent = 'You are going to have a wonderful day!'
-        }
-
         //Listen for clicks on the button
         button.addEventListener('click', GetFortune);
 
@@ -89,6 +84,11 @@
         let shuffledArray = shuffle(Array.from(sampArr));
         console.log(shuffledArray);
         */
+       //Get the fortune and render it to the DOM
+       function GetFortune(){
+        shuffle(responses)
+            fortune.textContent = 'You are going to have a wonderful day!'
+        }
 
     </script>
 </body>
